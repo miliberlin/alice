@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: 
+    "room"
+    "bar";
+}
+
+#room {
+    grid-area: room;
+    height: 100%;
+    width: auto;
+    background-image: url("img/background-h600.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-height: 1000px) {
+    #room {
+        background-image: url("img/background-h1000.jpg");
+    }
+}
+
+@media (max-height: 1200px) {
+    #room {
+        background-image: url("img/background-h1200.jpg");
+    }
+}
+
+@media (max-height: 1500px) {
+    #room {
+        background-image: url("img/background-h1500.jpg");
+    }
+}
+
+h1 {
+
+}
+
+#bar {
+    grid-area: bar;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.drinks-flex {
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.drinks {
+    height: 100%;
+    width: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+#drink-pink {
+
+}
+
+/* #drink-blue {
+    grid-area: bar-r;
+} */
