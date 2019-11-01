@@ -70,7 +70,7 @@ h1 {
     object-fit: contain;
 }
 
-#alice-s {
+.alice-s {
     height: 30vh;
     width: 80vw;
     background-image: url("img/alice-s.png");
@@ -83,7 +83,7 @@ h1 {
     top: 100px;
 }
 
-#alice-m {
+.alice-m {
     height: 50vh;
     width: 80vw;
     background-image: url("img/alice-m.png");
@@ -94,7 +94,7 @@ h1 {
     object-fit: contain;
 }
 
-#alice-l {
+.alice-l {
     height: 80vh;
     width: 80vw;
     background-image: url("img/alice-l.png");
@@ -132,3 +132,7 @@ h1 {
     box-sizing: border-box;
     object-fit: contain;
 }
+/* 
+img .drinks:hover {
+    cursor: pointer;
+} */
