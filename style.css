@@ -95,7 +95,7 @@ h1 {
 }
 
 .alice-l {
-    height: 80vh;
+    height: 75vh;
     width: 80vw;
     background-image: url("img/alice-l.png");
     background-repeat: no-repeat;
@@ -132,7 +132,26 @@ h1 {
     box-sizing: border-box;
     object-fit: contain;
 }
-/* 
-img .drinks:hover {
+
+/* shake code by Sarah Drasner
+https://css-tricks.com/snippets/css/shake-css-keyframe-animation/ */
+
+.drinks:hover {
     cursor: pointer;
-} */
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translateX(-1px);
+    }
+    20%, 80% {
+        transform: translateX(2px);
+    }
+    30%, 50%, 70% {
+        transform: translateX(-4px);
+    }
+    40%, 60% {
+        transform: translateX(4px);
+    }
+}
