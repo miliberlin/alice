@@ -4,6 +4,15 @@ const drinkShrink = document.getElementById("drink-shrink");
 
 const drinkGrow = document.getElementById("drink-grow");
 
+const room = document.getElementById("room");
+
+
+document.addEventListener('DOMContentLoaded', function() {
+   const welcome = document.createElement("h1");
+   welcome.innerHTML = "Make Alice grow or shrink!";
+   room.appendChild(welcome);
+});
+
 
 drinkShrink.addEventListener("click", aliceShrink);
 function aliceShrink() {
